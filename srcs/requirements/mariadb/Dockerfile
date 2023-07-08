@@ -1,7 +1,7 @@
 
 FROM debian:buster
 
-COPY ./script/db.sh /db.sh
+COPY ./tools/db.sh /db.sh
 
 EXPOSE 3306
 

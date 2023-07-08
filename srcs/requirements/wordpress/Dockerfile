@@ -1,6 +1,6 @@
 FROM debian:buster
 
-COPY ./script/setup.sh /setup.sh
+COPY ./tools/setup.sh /setup.sh
 
 EXPOSE 9000
 

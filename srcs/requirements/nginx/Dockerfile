@@ -6,7 +6,7 @@ RUN apt-get update && apt-get -y upgrade && \
 	openssl req -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=FR/ST=Lyon/L=Lyon/O=42Lyon/OU=dso/CN=dso.42.fr" -keyout /etc/ssl/dso.42.fr.key -out /etc/ssl/dso.42.fr.pem
 
 COPY conf/default.conf /etc/nginx/conf.d/default.conf
-COPY script/setup.sh .
+COPY tools/setup.sh .
 
 RUN chmod +x setup.sh
 
